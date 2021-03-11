@@ -1,0 +1,69 @@
+
+body {
+  width: 806px;
+  margin: auto;
+
+}
+
+
+.header-description {
+  height: 3px;
+  padding-bottom: 30px;
+}
+
+.header-description {
+  width: 806px;
+  background-color: red;
+  color: antiquewhite;
+}
+
+.header-description h2 {
+  float: left;
+  font-size: 14px;
+}
+
+.header-description p {
+  float: right;
+  font-size: 14px;
+}
+
+.header-description p::after {
+  content: "\2706";
+}
+
+.header-description span {
+  font-size: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+
+}
+
+.entrance {
+  background-size: cover;
+}
+
+.entry-header {
+  padding: 21px 19px 19px 19px;
+  border-top: 3px solid darkslategray;
+  border-bottom: 1px solid darkslategray;
+}
+
+.info img {
+  float: left;
+}
+
+
+.address img {
+  width: 100px;
+  float: right;
+}
+
+.bigbird {
+  width: 200px;
+}
