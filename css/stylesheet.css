@@ -1,8 +1,22 @@
+:root {
+  --main-color: #00A0E6;
+  --point-color: #91BD2C;
+  --text-color: #00001a;
+  --gray-color: #737373;
+  --dgray-color: #555555;
+  --white-color: #E5F5FC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   width: 806px;
   margin: auto;
-
+  color: var(--text-color);
 }
 
 
@@ -13,8 +27,8 @@ body {
 
 .header-description {
   width: 806px;
-  background-color: red;
-  color: antiquewhite;
+  background-color: var(--main-color);
+  color: var(--white-color);
 }
 
 .header-description h2 {
