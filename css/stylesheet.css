@@ -1,10 +1,12 @@
+/* https://iro-color.com/colorchart/word/iro.php?q=5%E6%9C%88 */
 :root {
-  --main-color: #00A0E6;
-  --point-color: #91BD2C;
+  --main-color: #89bcd6;
+  --point-color: #8fc31f;
   --text-color: #00001a;
-  --gray-color: #737373;
-  --dgray-color: #555555;
-  --white-color: #E5F5FC;
+  --gray-color: #9fa0a0;
+  --dgray-color: #8da3c4;
+  --white-bcolor: #d3edfb;
+  --white-gcolor: #eefcf0;
 }
 
 * {
@@ -17,12 +19,12 @@ body {
   width: 100%;
   margin: auto;
   color: var(--text-color);
-  font-family: 'Kosugi', sans-serif;
+  font-family: "Kosugi", sans-serif;
 }
 
 header {
   width: 100%;
-  height: 100px;
+  height: 90px;
   color: var(--text-color);
   display: flex;
   flex-direction: row;
@@ -31,29 +33,16 @@ header {
 }
 
 .header-description {
-  margin-right: 20px;
+  margin-right: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   text-align: right;
 }
 
-.header-description>p {
-  font-size: 1.7rem;
-}
-
-.header-description>p>span {
-  font-size: 3.5rem;
-  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
-  font-weight: 900;
-}
-
-.header-description>p>span::after {
-  content: "\2706";
-}
-
 .first-nav {
-  width: 100%;
+  /* width: 100%; */
+  line-height: 4rem;
 }
 
 .first-nav ul {
@@ -65,8 +54,26 @@ header {
 .first-nav ul li {
   margin-right: 2px;
   padding: 10px 15px;
-  border: 1px solid var(--point-color);
+  font-weight: 900;
+}
+
+.header-description > p {
+  margin: 5px 5px 10px;
+  font-size: 1.5rem;
+  /* border: 2px solid var(--point-color); */
   border-radius: 10px;
+  background-color: var(--white-gcolor);
+}
+
+.header-description > p > span {
+  font-size: 4.1rem;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 900;
+  border-bottom: 3px solid var(--main-color);
+}
+
+.header-description > p > span::after {
+  content: "\2706";
 }
 
 main {
@@ -104,7 +111,7 @@ main h2 {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .second-nav ul li {
@@ -114,10 +121,9 @@ main h2 {
   font-weight: 800;
 }
 
-
 .company {
   width: 90%;
-  margin:24px auto;
+  margin: 24px auto;
   padding: 40px;
   border: 3px outset var(--main-color);
   display: flex;
