@@ -1,13 +1,14 @@
 /* https://iro-color.com/colorchart/word/iro.php?q=5%E6%9C%88 */
 :root {
-  --main-color: #01579b;
-  --p-light: #4f83cc;
-  --p-dark: #002f6c;
+  --main-color: #1565c0;
+  --p-light: #5e92f3;
+  --p-dark: #003c8f;
   --text-p-color: #ffffff;
   --secondary-color: #81d4fa;
   --s-light: #b6ffff;
   --s-dark: #4ba3c7;
   --text-s-color: #000000;
+  --accent-color: #ffc229ff;
 }
 
 * {
