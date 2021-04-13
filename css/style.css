@@ -21,7 +21,7 @@ body {
   width: 100%;
   margin: auto;
   font-family: "Kosugi", sans-serif;
-  var(--text-s-color);
+  color: var(--text-s-color);
 }
 
 header {
