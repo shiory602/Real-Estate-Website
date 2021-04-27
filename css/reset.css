@@ -30,11 +30,11 @@ time, mark, audio, video {
 body {
  /* プロジェクトによって変動 */
  /* min-width: 1000pxs; */
- color: #C0B283 !important;
+ color: #000000 !important;
  line-height: 1.5;
  font-weight: 400;
  font-size: 24px;
- font-family: 'Suravaram', serif !important;
+ font-family: "Kosugi", sans-serif !important;
 
  width: 100vw;
  /* font-smoothing: antialiased; */
@@ -72,14 +72,14 @@ a {
 
 /* change colours to suit your needs */
 ins {
- background-color:#ff9;
+ background-color:#e2f1f8;
  color:#000;
  text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
- background-color:#ff9;
+ background-color:#e2f1f8;
  color:#000;
  font-style:italic;
  font-weight:bold;
@@ -104,7 +104,7 @@ hr {
  display:block;
  height:1px;
  border:0;
- border-top:1px solid #cccccc;
+ border-top:1px solid #808e95;
  margin:1em 0;
  padding:0;
 }
