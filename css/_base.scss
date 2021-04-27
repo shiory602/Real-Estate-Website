@@ -1,149 +1,100 @@
 /* https://iro-color.com/colorchart/word/iro.php?q=5%E6%9C%88 */
-:root {
-  --main-color: #1565c0;
-  --p-light: #5e92f3;
-  --p-dark: #003c8f;
-  --text-p-color: #ffffff;
-  --secondary-color: #b0bec5;
-  --s-light: #e2f1f8;
-  --s-dark: #808e95;
-  --text-s-color: #000000;
-  --accent-color: #ffc229ff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// color ////////////////////////////////////
+$main-color: #1565c0;
+$p-light: #5e92f3;
+$p-dark: #003c8f;
+$text-p-color: #ffffff;
+$secondary-color: #b0bec5;
+$s-light: #e2f1f8;
+$s-dark: #808e95;
+$text-s-color: #000000;
+$accent-color: #ffc229ff;
+//////////////////////////////////////////////
 
 body {
-  width: 100%;
-  margin: auto;
-  font-family: "Kosugi", sans-serif;
-  color: var(--text-s-color);
-}
+    font-family: "Kosugi", sans-serif;
+    color: $text-s-color;
 
-header {
-  width: 100%;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: var(--main-color);
-  color: var(--text-p-color);
-}
-.header-menu ul {
-  list-style: none;
-  margin-right: 30px;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-  /* text-align: right; */
-}
 
-/*
-.first-nav {
-  line-height: 4rem;
-}
+    header {
+        background-color: $main-color;
+        color: $text-p-color;
 
-.first-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-}
+        .first-nav {
 
-.first-nav ul li {
-  margin-right: 2px;
-  padding: 10px 15px;
-  font-weight: 900;
-}
+            ul {
 
-.header-description > p {
-  margin: 5px 5px 10px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-}
+                li {
+                    font-weight: 900;
+                }
+            }
+        }
 
-.header-description > p > span {
-  font-size: 4.1rem;
-  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
-  font-weight: 900;
-}
 
-.header-description > p > span::after {
-  content: "\2706";
-}
+        .header-description {
+            p {
+                font-size: 1.5rem;
+                border-radius: 10px;
 
-main {
-  position: relative;
-  height: 620px;
-  background-image: url("../img/topimg.jpg");
-  background-size: cover;
-  background-position: top center;
-}
+                span {
+                    font-size: 4.1rem;
+                    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+                    font-weight: 900;
+                }
 
-.filter {
-  -webkit-filter: brightness(132%) contrast(90%) saturate(110%);
-  filter: brightness(172%) contrast(90%) saturate(110%);
-}
+                span::after {
+                    content: "\2706";
+                }
+            }
+        }
+    }
 
-main h2 {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  text-align: left;
-  color: white;
-  font-size: 3rem;
-  font-weight: 300;
-  font-stretch: expanded;
-  text-shadow: 2px 3px rgba(0, 0, 0, 0.9);
-}
 
-main p {
-  position: absolute;
-  top: 60%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  text-align: left;
-  color: white;
-  font-size: 1rem;
-  font-weight: lighter;
-  text-shadow: 2px 3px rgba(0, 0, 0, 0.9);
-}
+    main {
+        background-image: url("../img/topimg.jpg");
+        background-size: cover;
+        background-position: top center;
 
-.company {
-  width: 80%;
-  margin: auto;
-  line-height: 2.5;
-}
-.company h3 {
-  color: var(--main-color);
-  font-size: 2.4rem;
-  border-bottom: 3px outset var(--s-dark);
-  margin-bottom: 20px;
-}
-.company p {
-  font-size: 1.4rem;
-}
+        h2 {
+            color: $text-p-color;
+            font-size: 3rem;
+            font-weight: 300;
+            font-stretch: expanded;
+            text-shadow: 2px 3px rgba(0, 0, 0, 0.9);
+        }
 
-.link-company {
-  width: 500px;
-  background-image: url("../img/entrance.jpg");
-}
+        p {
+            color: $text-p-color;
+            font-size: 1rem;
+            font-weight: lighter;
+            text-shadow: 2px 3px rgba(0, 0, 0, 0.9);
+        }
+    }
 
-footer {
-  width: 100%;
-  height: 300px;
-  margin: auto;
-  padding-top: 50px;
-  text-align: center;
-  background-color: var(--main-color);
-  color: white;
-  font-weight: 300;
-} */
+
+    .company {
+
+        h3 {
+            color: $main-color;
+            font-size: 2.4rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+    }
+
+
+    .link-company {
+        width: 500px;
+        background-image: url("../img/entrance.jpg");
+    }
+
+    footer {
+        background-color: $main-color;
+        color: white;
+        font-weight: 300;
+    }
+
+}
